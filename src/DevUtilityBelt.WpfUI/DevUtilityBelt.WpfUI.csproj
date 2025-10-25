@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevUtilityBelt.Core\DevUtilityBelt.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="DevUtilityBelt.Core/DevUtilityBelt.Core.csproj" Id="9c07b1e3-f668-4e61-be03-42bfd8234042" />
   <Project Path="DevUtilityBelt.Setup/DevUtilityBelt.Setup.csproj" Id="7a3cb925-8855-41ba-b0d0-dabd352e6a17" />
-  <Project Path="DevUtilityBelt.Wpf/DevUtilityBelt.Wpf.csproj" Id="49df203b-c904-442f-9e2f-338930a3d475" />
+  <Project Path="DevUtilityBelt.WpfUI/DevUtilityBelt.WpfUI.csproj" Id="695cd817-de6c-4587-a232-25796ac183c1" />
 </Solution>

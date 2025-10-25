@@ -8,8 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf.Ui.Controls;
 
-namespace DevUtilityBelt.Wpf
+namespace DevUtilityBelt.WpfUI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
