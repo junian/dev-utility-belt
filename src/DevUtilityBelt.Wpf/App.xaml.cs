@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace DevUtilityBelt
+namespace DevUtilityBelt.Wpf
 {
     /// <summary>
     /// Interaction logic for App.xaml
