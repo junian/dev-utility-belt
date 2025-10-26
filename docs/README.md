@@ -1,6 +1,6 @@
 <div align="center">
 
-![Dev Utility Belt](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYL-t-8OxocbcBqifiodwx9BN8ut1zXxEoIgo0qXqaRJIIAhjhkTWVKaCRoAEi1TUbj139eyKA0bEdv6Phyphenhyphen7YkKPFAn0ebg-FNE5lHYERzP6RUFCBuWqOF2tCFQt-Xu_4zV1osAJ2EsKnfOlmr5C24ZIIgwWMj4EJmbUi5PR6G6qyBzTUmwDn_3VZYBQ/s200/icon-dev-utility-belt-1024x1024@1x.png)
+![Dev Utility Belt](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiiEeHXIdV2c4MZ3S8IA584QI7bGVnuhY15xKHVK7pzD6yfLMeU2fIBMGKHBEPnfmb1JE0EIRxABGFzwdk0y6imZVW41cF1-ac8JzoYaHj5JhOoM4gEVTb7nf46mJreueBE5_rIIeMdzyDdLP2OUUFxm93dIZkl5dv5HMe_gnPShpDr6avxcttCaxG9DQ/s200/dev-utility-belt-1024-mac.png)
 
 # Dev Utility Belt
 
