@@ -34,8 +34,11 @@ namespace DevUtilityBelt.Core.ViewModels
         [ObservableProperty]
         private string _connectText = "Connect";
 
-        public YarpViewModel()
+        private readonly IMessageBoxService _messageBoxService;
+
+        public YarpViewModel(IMessageBoxService messageBoxService)
         {
+            _messageBoxService = messageBoxService;
         }
 
         private WebApplication PrepareYarp(int localhostPort, int publicPort)
@@ -133,7 +136,7 @@ namespace DevUtilityBelt.Core.ViewModels
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Error stopping the proxy: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                _messageBoxService.Show($"Error stopping the proxy: {ex.Message}");
             }
             finally
             {

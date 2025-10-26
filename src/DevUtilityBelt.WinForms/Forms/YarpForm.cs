@@ -15,11 +15,11 @@ namespace DevUtilityBelt.WinForms.Forms
 {
     public partial class YarpForm : Form, IViewFor<YarpViewModel>
     {
-        public YarpForm()
+        public YarpForm(YarpViewModel viewModel)
         {
             InitializeComponent();
 
-            ViewModel = new YarpViewModel();
+            ViewModel = viewModel;
             ViewModel.AppendLogAction = log => 
             {
                 if (string.IsNullOrWhiteSpace(log))

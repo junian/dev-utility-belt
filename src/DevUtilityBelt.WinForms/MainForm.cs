@@ -1,6 +1,7 @@
 ﻿using DevUtilityBelt.Core.ViewModels;
 using DevUtilityBelt.WinForms.Forms;
 using DevUtilityBelt.WinForms.Services;
+using Microsoft.Extensions.DependencyInjection;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
@@ -18,14 +19,16 @@ namespace DevUtilityBelt.WinForms
     public partial class MainForm : Form, IViewFor<MainViewModel>
     {
         private ContextMenuStrip _trayMenu;
-        private IconService _iconService;
+        private readonly IconService _iconService;
 
-        public MainForm()
+        public MainForm(
+            MainViewModel viewModel, 
+            IconService iconService)
         {
             InitializeComponent();
 
-            ViewModel = new MainViewModel();
-            _iconService = new Services.IconService();
+            ViewModel = viewModel;
+            _iconService = iconService;
 
             // Create the tray menu
             _trayMenu = new ContextMenuStrip();
@@ -41,8 +44,8 @@ namespace DevUtilityBelt.WinForms
 
             var hostForms = new List<Form>
             {
-                new YarpForm(),
-                new WirelessAdbForm()
+                Program.Services.GetRequiredService<YarpForm>(),
+                Program.Services.GetRequiredService<WirelessAdbForm>(),
             };
 
             foreach (var hostForm in hostForms)
