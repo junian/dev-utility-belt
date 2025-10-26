@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using DevUtilityBelt.Core.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,8 @@ namespace DevUtilityBelt.Core.ViewModels
     {
         [ObservableProperty]
         private string _appTitle = "Dev Utility Belt";
+
+        [ObservableProperty]
+        private byte[] _appIcon = Resources.Favicon;
     }
 }

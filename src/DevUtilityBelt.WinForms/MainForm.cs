@@ -18,6 +18,23 @@ namespace DevUtilityBelt.WinForms
         {
             InitializeComponent();
             ViewModel = new MainViewModel();
+            this.Bind(ViewModel, vm => vm.AppIcon, v => v.Icon, 
+                vmToViewConverter: iconBytes => 
+                {
+                    if(iconBytes == null || iconBytes.Length == 0)
+                    {
+                        return null;
+                    }
+
+                    using var ms = new System.IO.MemoryStream(buffer: iconBytes);
+                    return new Icon(ms);
+                },
+                viewToVmConverter: icon => 
+                {
+                    using var ms = new System.IO.MemoryStream();
+                    icon?.Save(ms);
+                    return ms.ToArray();
+                });
             this.Bind(ViewModel, vm => vm.AppTitle, v => v.Text);
         }
 
