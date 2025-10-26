@@ -15,5 +15,11 @@ namespace DevUtilityBelt.Core.ViewModels
 
         [ObservableProperty]
         private byte[] _appIcon = Resources.Favicon;
+
+        [ObservableProperty]
+        private string _menuItemShow = "Show";
+
+        [ObservableProperty]
+        private string _menuItemExit = "Exit";
     }
 }

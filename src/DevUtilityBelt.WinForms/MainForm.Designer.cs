@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MainForm";
+            components = new System.ComponentModel.Container();
+            notifyIconMain = new NotifyIcon(components);
+            tabControlMain = new TabControl();
+            SuspendLayout();
+            // 
+            // notifyIconMain
+            // 
+            notifyIconMain.Text = "notifyIcon1";
+            notifyIconMain.Visible = true;
+            // 
+            // tabControlMain
+            // 
+            tabControlMain.Dock = DockStyle.Fill;
+            tabControlMain.Location = new Point(0, 0);
+            tabControlMain.Name = "tabControlMain";
+            tabControlMain.SelectedIndex = 0;
+            tabControlMain.Size = new Size(424, 426);
+            tabControlMain.TabIndex = 0;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(424, 426);
+            Controls.Add(tabControlMain);
+            Name = "MainForm";
+            Text = "MainForm";
+            FormClosing += MainForm_FormClosing;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private NotifyIcon notifyIconMain;
+        private TabControl tabControlMain;
     }
 }
